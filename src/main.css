@@ -1,0 +1,155 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+*{
+  margin: 0;
+}
+
+.logo{
+  width: 180px;
+  margin-bottom: -95px;
+}
+
+.navBar{
+  color: #cfc7c7;
+  margin-left: 20px ;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.active{
+  font-weight: 700;
+  color: rgb(230, 33, 33);
+}
+
+.imgHomeContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.imgHome{
+  width: 450px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemonSelect {
+  margin-bottom: 15px;
+  width: 300px;
+  height: 40px;
+}
+
+.pokemonSelect > option{
+  font-size: 20px;
+}
+
+.detailsPokemonBtn{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+}
+
+.pokemonContainer{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px ;
+}
+
+.imgCard{
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  z-index: 1;
+}
+
+.imgCardContainer {
+  margin-bottom: -60px;
+  width: 255px;
+  height: 255px;
+  background-color: white;
+  border-radius: 250px;
+  box-shadow: 0px 2px 10px rgb(243, 79, 147);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCardContainer::before {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-image: conic-gradient(rgb(243, 79, 87) 20deg, transparent 120deg);
+  animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+.imgCardContainer::after{
+    content: "";
+    position: absolute;
+    height: 255px;
+    width: 255px;
+    border-radius: 100%;
+}
+
+
+.Card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px rgb(95, 79, 243);
+}
+
+h2{
+  font-size: 50px;
+  margin: 60px 0px 20px 0px;
+}
+
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+span{
+  font-weight: bolder;
+}
+
+li{
+  list-style: none;
+  text-align: justify;
+  margin-right: 25px;
+}
+
+.returnBtn{
+  background-color: rgb(146, 50, 236);
+  color: white;
+  margin-top: 25px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid rgb(82, 29, 131);
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
